@@ -1,15 +1,8 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# Created by https://www.gitignore.io/api/helm
+# Edit at https://www.gitignore.io/?templates=helm
 
-# Test binary, built with `go test -c`
-*.test
+### Helm ###
+# Chart dependencies
+**/charts/*.tgz
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# End of https://www.gitignore.io/api/helm
