@@ -1,6 +1,33 @@
+# Philly DC Host Data
+%TAG ! tag:hostname:phil:
+---
 host: phl-42
 datacenter:
-  location: Philadelphia
-  cab: 13
+  location: !PHL Philadelphia # Reference ID: PHL
+  cab: 13 # to convert them into string with using " or ', we can use tag - !! str 13
   cab_unit: 13
 datacenterInFlow: { location: Philadelphia, cab: 13, cab_unit: 13 }
+roles:
+  - webserver
+  - wp_database
+donwtime_sch: |
+  2018-10-31 - kernel upgrade
+  2019-02-02 - security fix
+comments: >
+  Experiencing high I/O
+  since 2018-10-01.
+  Currently investigating.
+---
+host: phl-43
+datacenter:
+  location: Philadelphia
+  cab: "14"
+  cab_unit: "4"
+...
+---
+host: hel-13
+datacenter:
+  location: Helsinka
+  cab: "9"
+  cab_unit: "1-2"
+...
