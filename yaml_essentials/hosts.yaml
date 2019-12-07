@@ -20,9 +20,19 @@ comments: >
 ---
 host: phl-43
 datacenter:
-  location: Philadelphia
+  location: &PHL Philadelphia
   cab: "14"
   cab_unit: "4"
+roles: &wphost
+  - webserver
+  - wp_database
+---
+host: phl-43
+datacenter:
+  location: *PHL
+  cab: "14"
+  cab_unit: "4"
+roles: *wphost
 ...
 ---
 host: hel-13
