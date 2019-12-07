@@ -1,0 +1,6 @@
+host: phl-42
+datacenter:
+  location: Philadelphia
+  cab: 13
+  cab_unit: 13
+datacenterInFlow: { location: Philadelphia, cab: 13, cab_unit: 13 }
